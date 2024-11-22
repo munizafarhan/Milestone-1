@@ -1,0 +1,137 @@
+body {
+    background:black;
+    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.left-section {
+    flex: 1 1 100%; /* By default, take full width */
+    background: #5d16a0;
+    color:white;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.right-section {
+    flex: 1 1 100%; /* By default, take full width */
+    background:white;
+    padding: 20px;
+    font-style: italic;
+}
+
+h1.name {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p.title {
+    font-size: 1.2rem;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid black;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-info p, .languages p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.right-section h3 {
+    color: #333;
+    font-size: 1.2rem;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.education, .experience, .skills, .certifications {
+    margin-bottom: 20px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill-icon {
+    font-size: 1.5rem;
+    min-width: 30px;
+}
+
+.skill-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .left-section {
+        flex: 1 1 35%; /* For larger screens, take 35% width */
+    }
+
+    .right-section {
+        flex: 1 1 65%; /* For larger screens, take 65% width */
+    }
+
+    .main {
+        flex-wrap: nowrap; /* Side-by-side sections */
+    }
+}
+
+@media (min-width: 1200px) {
+    h1.name {
+        font-size: 2.5rem;
+    }
+
+    p.title {
+        font-size: 1.5rem;
+    }
+
+    .contact-info p, .languages p {
+        font-size: 1rem;
+    }
+}
